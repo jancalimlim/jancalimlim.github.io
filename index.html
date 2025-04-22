@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jan Calimlim</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(to right, #e0f7fa, #e1f5fe);
-      margin: 0;
-      padding: 0;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
@@ -23,7 +24,7 @@
       color: white;
       text-align: center;
       padding: 60px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
@@ -33,7 +34,7 @@
 
     header p {
       font-size: 18px;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     main {
@@ -43,21 +44,43 @@
     }
 
     section {
-      background: white;
+      background: #fff;
       border-radius: 12px;
       padding: 30px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     }
 
     section h2 {
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       color: #007acc;
     }
 
     ul {
       padding-left: 20px;
+      list-style: disc;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .contact-links a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -66,17 +89,6 @@
       background-color: #cfd8dc;
       font-size: 14px;
       color: #555;
-    }
-
-    .contact-links a {
-      color: #007acc;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-    }
-
-    .contact-links a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
