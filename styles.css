@@ -30,10 +30,6 @@ h1 {
 margin: 0 0 10px;
 }
 
-.social-links {
-font-size: 1.3rem;
-}
-
 .social-links a {
 color: #333;
 text-decoration: none;
@@ -136,6 +132,8 @@ line-height: 1.6;
 
 .social-links {
   display: flex;
-  gap: 12px;
+  justify-content: center; /* centers icons under your name */
   align-items: center;
+  gap: 12px;
+  font-size: 1.3rem;
 }
