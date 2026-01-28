@@ -1,0 +1,141 @@
+:root {
+--bg-cream: #FFFBF5;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+color: #222;
+min-height: 100vh;
+
+background-image: url("images/background-wave.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center bottom;
+}
+
+header {
+background: rgba(255,255,255,0.8);
+backdrop-filter: blur(6px);
+box-shadow: 0 2px 10px rgba(0,0,0,.06);
+padding: 48px 20px 28px;
+text-align: center;
+}
+
+h1 {
+margin: 0 0 10px;
+}
+
+.social-links {
+font-size: 1.3rem;
+}
+
+.social-links a {
+color: #333;
+text-decoration: none;
+}
+
+.social-links a:hover {
+color: #0077b5;
+}
+
+main {
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+section {
+margin-bottom: 50px;
+}
+
+.card {
+background: rgba(255,255,255,0.55);
+border: 1px solid rgba(255,255,255,0.65);
+border-radius: 6px;
+padding: 24px;
+box-shadow: 0 10px 30px rgba(0,0,0,.06);
+backdrop-filter: blur(10px);
+}
+
+.card h2 {
+margin-top: 0;
+}
+
+.project-heading {
+margin: 18px 0 12px;
+font-size: 1.05rem;
+font-weight: 700;
+letter-spacing: 0.1px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.play-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 18px;
+height: 18px;
+text-decoration: none;
+color: #111;
+cursor: pointer;
+transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.play-btn::before {
+content: "▶";
+font-size: 14px;
+font-weight: 700;
+line-height: 1;
+}
+
+.play-btn:hover {
+transform: translateX(2px);
+opacity: 0.7;
+}
+
+.play-btn:focus-visible {
+outline: 2px solid #111;
+outline-offset: 2px;
+}
+
+.project-images {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+gap: 16px;
+}
+
+.project-images a {
+display: block;
+overflow: hidden;
+border-radius: 6px;
+}
+
+.project-images img {
+width: 100%;
+height: 340px;
+object-fit: cover;
+transition: transform .2s ease, box-shadow .2s ease;
+box-shadow: 0 0 6px rgba(0,0,0,.08);
+}
+
+.project-images a:hover img {
+transform: scale(1.04);
+box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+p {
+line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

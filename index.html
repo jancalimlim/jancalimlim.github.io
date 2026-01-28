@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jan Calimlim</title>
+
+  <meta name="description"
+        content="Portfolio of Jan Calimlim" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Jan Calimlim</h1>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/jancalimlim"
+       target="_blank"
+       aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <span class="icon-separator">|</span>
+
+    <a href="https://github.com/jancalimlim" 
+       target="_blank"
+       aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>About Me</h2>
+    <p>
+      Blending my nursing experience with technology, I bring a focus on critical thinking,
+      clear communication, and precision. The same care used in patient work now drives
+      how I design, build, and document software.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Projects</h2>
+
+    <h3 class="project-heading">
+      <span>Bliss Management — React Native, TypeScript</span>
+    </h3>
+
+    <div class="project-images">
+      <a href="images/login-screenshot.png"
+        class="glightbox"
+        data-gallery="bliss"
+        data-title="Secure Login"
+        data-description="A simple and secure login experience designed for quick access to room management.">
+        <img src="images/login-screenshot.png"
+            alt="Bliss Management login screen"
+            loading="lazy" />
+      </a>
+
+      <a href="images/rooms-screenshot.png"
+         class="glightbox"
+         data-gallery="bliss"
+         data-title="Room Availability Overview"
+         data-description="View room availability at a glance using date-based filtering and calendar selection.">
+        <img src="images/rooms-screenshot.png"
+             alt="Bliss Management availability view"
+             loading="lazy" />
+      </a>
+
+      <a href="images/create-screenshot.png"
+         class="glightbox"
+         data-gallery="bliss"
+         data-title="Reservation Creation"
+         data-description="Create and manage room reservations through a clean, guided form.">
+        <img src="images/create-screenshot.png"
+             alt="Bliss Management reservation form"
+             loading="lazy" />
+      </a>
+    </div>
+
+    <h3 class="project-heading">
+      <span>Chess — HTML, CSS, JavaScript, Python</span>
+      <a class="play-btn"
+         href="game/game.html"
+         aria-label="Play Chess Demo">
+      </a>
+    </h3>
+
+    <p>
+      A minimal chess variant that runs entirely in the browser using a Python engine
+      via pyodide featuring standard movement rules, turn tracking, and capture counts.
+    </p>
+
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({ selector: '.glightbox' });
+</script>
+
+</body>
+</html>
